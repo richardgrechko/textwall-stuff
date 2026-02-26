@@ -1406,6 +1406,10 @@ select::-ms-expand {
     animation: rainbow 3.6s linear infinite;
 }
 
+span:hover {
+    color: rgb(192, 192, 255)
+}
+
 hr {
     border: none;
     height: 4px;

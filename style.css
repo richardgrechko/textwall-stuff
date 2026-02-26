@@ -981,13 +981,13 @@ td {
 }
 @font-face {
   font-family: 'richardgrechko monospace';
-  src: url('textwall-stuff/fonts/windowsrichard-monospace.ttf') format('truetype');
+  src: url('fonts/windowsrichard-monospace.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'richardgrechko terminal';
-  src: url('textwall-stuff/fonts/richard-grechko-terminal.ttf') format('truetype');
+  src: url('fonts/richard-grechko-terminal.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }

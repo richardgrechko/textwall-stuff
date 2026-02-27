@@ -117,7 +117,7 @@ h3 {
 }
 
 .decoration>img {
-    filter: opacity(.5) blur(1.5px);
+    filter: opacity(.5) blur(1px);
     width: 30px
 }
 

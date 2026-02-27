@@ -101,7 +101,8 @@ h3 {
 }
 
 .decoration {
-    background-color: #efefff;
+    backdrop-filter: blur(2px);
+    background-color: #efefff60;
     border-radius: 25%;
     display: flex;
     justify-content: center;
@@ -116,7 +117,7 @@ h3 {
 }
 
 .decoration>img {
-    filter: opacity(.5);
+    filter: opacity(.5) blur(2px);
     width: 30px
 }
 

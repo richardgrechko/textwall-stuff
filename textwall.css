@@ -182,14 +182,14 @@ h3 {
 
 .buttonlink {
     text-decoration: underline;
-    color: #6290cb;
+    color: #eeeeff;
     cursor: pointer;
     transition: color 0.3s, text-shadow 0.3s;
 }
 
 .buttonlink:hover,
 .buttonlink:active {
-    color: #5f57ff;
+    color: #bbbbff;
     text-shadow: 0 0 5px rgb(39 0 255 / 70%);
     transition: color 0.3s, text-shadow 0.3s;
 }
@@ -1451,39 +1451,39 @@ fieldset {
 
 a:link,
 a:visited {
-    color: #6290cb;
+    color: #eeeeff;
     transition: color 0.3s, text-shadow 0.3s;
 }
 
 a:hover,
 a:active {
-    color: #FF0000;
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
+    color: #bbbbff;
+    text-shadow: 0 0 5px #bbbbff44;
 }
 
 /* For inline SVG */
 svg:hover {
     transform: scale(1.05);
-    filter: drop-shadow(0 4px 10px rgba(139, 0, 0, 0.6));
+    filter: drop-shadow(0 4px 10px #bbbbff44);
     transition: transform 0.3s, filter 0.3s;
 }
 
 svg:active {
     transform: scale(0.98);
-    filter: drop-shadow(0 2px 8px rgba(139, 0, 0, 0.8));
+    filter: drop-shadow(0 2px 8px #9999ff88);
 }
 
 /* For SVG used as <img src="icon.svg"> */
 img[src$=".svg"]:hover {
     transform: scale(1.2);
-    filter: drop-shadow(0 4px 10px rgba(139, 0, 0, 0.6));
+    filter: drop-shadow(0 4px 10px #bbbbff44);
     transition: transform 0.3s, filter 0.3s;
     cursor: pointer;
 }
 
 img[src$=".svg"]:active {
     transform: scale(0.98);
-    filter: drop-shadow(0 2px 8px rgba(139, 0, 0, 0.8));
+    filter: drop-shadow(0 2px 8px #9999ff88);
 }
 
 input[type="color"] {

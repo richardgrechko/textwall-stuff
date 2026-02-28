@@ -494,8 +494,8 @@ td {
 }
 
 #chatbox {
-    border: 1px solid rgba(114, 10, 10, 0.548);
-    background-color: #fff;
+    border: 1px solid rgb(134 120 255 / 55%);
+    background-color: #fff8;
     border-radius: 5px;
     margin-bottom: 5px;
     width: 100%;
@@ -518,7 +518,7 @@ td {
 }
 
 #chatbox.dark {
-    background-color: #000;
+    background-color: #0008;
     color: #fff;
 }
 
@@ -530,7 +530,14 @@ td {
     border-radius: 5px;
     border: none;
     width: 100%;
-    background-color: rgb(121 118 255 / 80%);
+    background-color: rgb(121 118 255 / 50%);
+    user-select: none
+}
+#chatmsg:hover {
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    background-color: rgb(121 118 255 / 50%);
     user-select: none
 }
 

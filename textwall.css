@@ -1349,15 +1349,15 @@ select {
 
 
 select:hover {
-    background: rgba(150, 30, 30, 0.85);
-    border-color: rgba(220, 100, 100, 0.6);
+    background: #8181ff;
+    border-color: #5f5fff;
 }
 
 
 select:focus {
-    background: rgba(170, 40, 40, 0.9);
-    border-color: rgba(255, 120, 120, 0.8);
-    box-shadow: 0 0 4px rgba(255, 100, 100, 0.3);
+    background: #8181ff;
+    border-color: #5f5fff;
+    box-shadow: 0 0 4px #5f5fff;
 }
 
 

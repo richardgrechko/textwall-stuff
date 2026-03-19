@@ -6,7 +6,7 @@ body {
 }
 
 * {
-    font-family: richardgrechko terminal, monospace;
+    font-family: richardgrechko terminal 2, monospace;
     -webkit-tap-highlight-color: transparent
 }
 
@@ -1006,6 +1006,12 @@ td {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'richardgrechko terminal 2';
+  src: url('fonts/richard-grechko-terminal-2.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 .buttons {
     display: flex;
     justify-content: stretch;

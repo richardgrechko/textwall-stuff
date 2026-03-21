@@ -6,7 +6,7 @@ body {
 }
 
 * {
-    font-family: richardgrechko terminal 2, monospace;
+    font-family: "richardgrechko terminal 2", monospace;
     -webkit-tap-highlight-color: transparent
 }
 

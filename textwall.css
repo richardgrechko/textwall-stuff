@@ -6,7 +6,7 @@ body {
 }
 
 * {
-    font-family: "richardgrechko terminal 2", monospace;
+    font-family: "Menlo", monospace;
     -webkit-tap-highlight-color: transparent
 }
 
@@ -76,8 +76,9 @@ h3 {
 
 #info {
     backdrop-filter: blur(3px);
-    background-color: rgb(126 117 255 / 30%);
-    border: 1px solid rgb(139 137 255 / 80%);
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(to bottom, #4383ff61, #4987ffd6);
+    box-shadow: inset 0 0 5px #8cf;
     color: #fff;
     padding: 5px 0;
     font-size: 18px;
@@ -95,14 +96,14 @@ h3 {
     z-index: 4;
     display: none;
     flex-direction: row;
-    background-color: rgba(55, 55, 61, 0.2);
+    background: linear-gradient(to bottom, #86afff1a, #6d9fff7d);
+    box-shadow: inset 0 0 5px #8cf;
     border-radius: 5px;
     width: 145px;
     justify-content: space-evenly
 }
 
 .decoration {
-    background-color: #8989b3;
     border-radius: 25%;
     display: flex;
     justify-content: center;
@@ -113,11 +114,17 @@ h3 {
 }
 
 .decoration.enabled {
-    background-color: #c3c3ff
+    background: linear-gradient(to bottom, #86afffa6, #6d9fff);
+    box-shadow: inset 0 0 5px #8cf;
 }
 
 .decoration>img {
-    filter: opacity(.5) blur(1px);
+    background-color: transparent;
+    background: linear-gradient(to bottom, #86afff5c, #6d9fff);
+    box-shadow: inset 0 0 5px #8cf;
+    border: none;
+    border-radius: 5px;
+    filter: opacity(.5);
     width: 30px
 }
 
@@ -129,6 +136,8 @@ h3 {
     backdrop-filter: blur(2px);
     border: 1px solid rgb(153 160 255 / 50%);
     background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(to bottom, #4383ff61, #4987ffd6);
+    box-shadow: inset 0 0 5px #8cf;
     color: #fff;
     position: absolute;
     padding: 5px 10px;
@@ -164,7 +173,10 @@ h3 {
 .member {
     padding: 5px;
     margin: 3px;
-    background-color: rgba(255, 255, 255, .35);
+    color: #000000;
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(transparent, #c8dcff33);
+    box-shadow: inset 0 6px 18px rgb(255 255 255 / 30%);
     border-radius: 5px;
     font-size: 12px;
     cursor: pointer
@@ -172,7 +184,10 @@ h3 {
 
 .member:hover {
     text-decoration: line-through;
-    color: #5f57ff;
+    color: #000000;
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(transparent, #ff000033);
+    box-shadow: inset 0 6px 18px rgb(255 255 255 / 30%);
 }
 
 #register,
@@ -233,9 +248,10 @@ input {
     scrollbar-width: none;
     border: 1px solid rgb(153 160 255 / 50%);
     background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(transparent, #c8dcff33);
+    box-shadow: inset 0 6px 18px rgb(255 255 255 / 30%);
     border-radius: 8px;
     padding: 4px;
-    box-shadow: 0 4px 12px rgba(139, 0, 0, 0.3);
 }
 
 #colourlist::-webkit-scrollbar,
@@ -339,7 +355,9 @@ td {
     text-align: center;
     transition: all .5s;
     border: 1px solid rgb(132 122 255 / 80%);
-    background-color: rgb(128 119 255 / 25%);
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(to bottom, #4383ff61, #4987ffd6);
+    box-shadow: inset 0 0 5px #8cf;
     color: #fff;
     margin: 15px;
     padding: 5px 15px 15px;
@@ -473,14 +491,13 @@ td {
     width: 300px;
     border: 1px solid rgb(153 160 255 / 50%);
     background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(to bottom, #4383ff30, #4987ff91);
+    box-shadow: inset 0 0 5px #8cf;
     border-radius: 10px 0 0 10px;
     padding: 12px;
     display: flex;
     flex-direction: column;
     pointer-events: auto;
-
-    /* modern look */
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
     backdrop-filter: blur(3px);
     gap: 8px;
     /* spacing between inner elements */
@@ -500,7 +517,7 @@ td {
     margin-bottom: 5px;
     width: 100%;
     height: 100%;
-    font-size: 13px;
+    font-size: 12px;
     word-wrap: break-word;
     overflow: auto;
     transition: background-color 0.5s ease, color 0.5s ease;
@@ -527,23 +544,25 @@ td {
 }
 
 #chatmsg {
-    border-radius: 5px;
+    box-shadow: inset 0 0 6px #fff6;
     border: none;
+    border-radius: 5px;
     width: 100%;
-    background-color: rgb(121 118 255 / 50%);
+    background-color: transparent;
     user-select: none
 }
 #chatmsg:hover {
     border-radius: 5px;
     border: none;
     width: 100%;
-    background-color: rgb(121 118 255 / 50%);
     user-select: none
 }
 
 #sendmsg {
     margin: 5px;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(to bottom, #86afff45, #6d9fffad);
+    box-shadow: inset 0 0 5px #8cf;
     border-radius: 5px;
     width: 20px;
     padding: 5px;
@@ -553,7 +572,10 @@ td {
 #chatbutton {
     backdrop-filter: blur(2px);
     background-color: rgba(128, 128, 255, 0.25);
-    border-radius: 0 0 0 5px;
+    background: linear-gradient(to bottom, #4383ff30, #4987ff91);
+    box-shadow: inset 0 0 6px #fff6;
+    border: none;
+    border-radius: 5px;
     padding: 10px;
     margin-bottom: 24px;
     pointer-events: auto;
@@ -1092,14 +1114,15 @@ input[type="submit"] {
     /* compact size */
     font-size: 14px;
     font-weight: 500;
-    color: #aaa;
-    background: #222;
+    color: #000000;
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(transparent, #c8dcff33);
+    box-shadow: inset 0 6px 18px rgb(255 255 255 / 30%);
     /* dark grey background */
-    border: 3px solid #114;
+    border: 1px solid #fff5;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -1108,7 +1131,11 @@ input[type="button"],
 input[type="submit"]:hover {
     background: #666;
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(to bottom, #f0f6ff77, #f0f6ff);
+    box-shadow: inset 0 0 5px #8cf;
+    /* dark grey background */
+    border: 1px solid #fff5;
 }
 
 button:focus,
@@ -1121,27 +1148,30 @@ input[type="submit"]:focus {
 button:disabled,
 input[type="submit"]:disabled,
 input[type="button"]:disabled {
-    background: #333;
-    color: #555;
-    cursor: not-allowed;
-    box-shadow: none;
-    transform: none;
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(transparent, #ff4d7674);
+    box-shadow: inset 0 6px 18px rgb(255 255 255 / 30%);
+    /* dark grey background */
+    border: 1px solid #fff5;
 }
 input[type="button"]:disabled {
-    background: #333;
-    color: #555;
-    cursor: not-allowed;
-    box-shadow: none;
-    transform: none;
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(transparent, #ff4d7674);
+    box-shadow: inset 0 6px 18px rgb(255 255 255 / 30%);
+    /* dark grey background */
+    border: 1px solid #fff5;
 }
 input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
     width: 16px;
     height: 16px;
-    border: 2px solid #888;
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(transparent, #7687ff74);
+    box-shadow: inset 0 6px 18px rgb(255 255 255 / 30%);
+    /* dark grey background */
+    border: 1px solid #fff5;
     border-radius: 4px;
-    background: #ccc;
     cursor: pointer;
     transition: all 0.2s ease;
     position: relative;
@@ -1149,18 +1179,27 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:hover {
-    background: #bbb;
-    border-color: #666;
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(transparent, #7687ff74);
+    box-shadow: inset 0 6px 18px rgb(255 255 255 / 30%);
+    /* dark grey background */
+    border: 1px solid #fff5;
 }
 
 input[type="checkbox"]:focus {
-    outline: 2px solid #fff;
-    outline-offset: 2px;
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(transparent, #7687ff74);
+    box-shadow: inset 0 6px 18px rgb(255 255 255 / 30%);
+    /* dark grey background */
+    border: 1px solid #fff5;
 }
 
 input[type="checkbox"]:checked {
-    background: #0b00ff;
-    border-color: #0100aa;
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(#cad1ff8f, #6c7eff74);
+    box-shadow: inset 0 6px 18px rgb(255 255 255 / 30%);
+    /* dark grey background */
+    border: 1px solid #fff5;
 }
 
 input[type="checkbox"]:checked::after {
@@ -1302,13 +1341,12 @@ input[type="number"],
 input[type="password"],
 textarea {
     padding: 4px 2px;
-    color: #fff;
-
-
-    background: rgb(24 20 120 / 80%);
-    border: 1px solid rgb(94 80 200 / 40%);
-    border-radius: 2px;
-
+    color: #000000;
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(to bottom, #f0f6ff47, #f0f6ff77);
+    box-shadow: inset 0 0 5px #8cf;
+    border: none;
+    border-radius: 5px;
     outline: none;
     transition: all 0.25s ease;
 }
@@ -1318,9 +1356,9 @@ input[type="search"]:hover,
 input[type="number"]:hover,
 input[type="password"]:hover,
 textarea:hover {
-    background: rgb(122 122 255 / 90%);
-    border-color: rgb(127 120 255 / 80%);
-    box-shadow: 0 0 6px rgb(113 100 255 / 40%);
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(to bottom, #f0f6ff77, #f0f6ff);
+    box-shadow: inset 0 0 5px #8cf;
 }
 
 
@@ -1329,15 +1367,15 @@ input[type="search"]:focus,
 input[type="number"]:focus,
 input[type="password"]:focus,
 textarea:focus {
-    background: rgb(122 122 255 / 90%);
-    border-color: rgb(127 120 255 / 80%);
-    box-shadow: 0 0 6px rgb(113 100 255 / 40%);
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(to bottom, #f0f6ff77, #f0f6ff);
+    box-shadow: inset 0 0 5px #8cf;
 }
 
 
 input::placeholder,
 textarea::placeholder {
-    color: #fff;
+    color: #000a;
     font-style: italic;
 }
 
@@ -1347,10 +1385,12 @@ select {
     /* compact size */
     font-size: 14px;
     color: #fff;
-    background: rgb(134 118 255 / 50%);
-    /* dark red with alpha */
-    border: 1px solid rgb(120 117 255 / 40%);
-    border-radius: 6px;
+    color: #000000;
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(to bottom, #f0f6ff47, #f0f6ff77);
+    box-shadow: inset 0 0 5px #8cf;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
     outline: none;
     transition: all 0.25s ease;
@@ -1362,15 +1402,17 @@ select {
 
 
 select:hover {
-    background: #8181ff;
-    border-color: #5f5fff;
+    color: #000000;
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(to bottom, #f0f6ff77, #f0f6ff);
+    box-shadow: inset 0 0 5px #8cf;
 }
 
 
 select:focus {
-    background: #8181ff;
-    border-color: #5f5fff;
-    box-shadow: 0 0 4px #5f5fff;
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(to bottom, #f0f6ff77, #f0f6ff);
+    box-shadow: inset 0 0 5px #8cf;
 }
 
 
@@ -1421,10 +1463,6 @@ select::-ms-expand {
     animation: rainbow 3.6s linear infinite;
 }
 
-span:hover {
-    color: rgb(192, 192, 255)
-}
-
 hr {
     border: none;
     height: 4px;
@@ -1434,11 +1472,12 @@ hr {
 }
 
 .alert {
-    background-color: rgb(112, 0, 0);
-    color: white;
+    color: #000000;
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(#ff808030, #ff000063);
+    box-shadow: inset 0 6px 18px rgb(255 255 255 / 30%);
     font-weight: italic;
     border-radius: 5px;
-    animation: blinkRed 2s infinite;
 }
 
 @keyframes blinkRed {
@@ -1458,7 +1497,10 @@ hr {
 /* i like stylizing */
 fieldset {
     border: 2px solid #bbbaff;
-    box-shadow: 0 4px 10px rgb(2 0 139 / 50%);
+    background-color: rgb(153 160 255 / 20%);
+    background: linear-gradient(to bottom, transparent, #f0f6ff77);
+    box-shadow: inset 0 0 5px #8cf;
+    color: #000;
     border-radius: 6px;
     padding: 1em;
     margin: 1em 0;
@@ -1491,15 +1533,10 @@ svg:active {
 /* For SVG used as <img src="icon.svg"> */
 img[src$=".svg"]:hover {
     transform: scale(1.2);
-    filter: drop-shadow(0 4px 10px #bbbbff44);
-    transition: transform 0.3s, filter 0.3s;
     cursor: pointer;
 }
 
-img[src$=".svg"]:active {
-    transform: scale(0.98);
-    filter: drop-shadow(0 2px 8px #9999ff88);
-}
+
 
 input[type="color"] {
     width: 50px;

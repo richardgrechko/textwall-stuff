@@ -1038,6 +1038,12 @@ td {
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: 'richard grechko node';
+  src: url('fonts/richard-grechko-node.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 .buttons {
     display: flex;
     justify-content: stretch;
